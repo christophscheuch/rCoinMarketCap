@@ -22,10 +22,10 @@ get_historical_data <- function(id, from = NULL, to = NULL) {
 
   out <- as.data.frame(rvest::html_table(url))
   out$Date <- lubridate::mdy(out$Date)
-  out$Open <- as.numeric(out$Open)
+  out$Open. <- as.numeric(out$Open.)
   out$High <- as.numeric(out$High)
   out$Low <- as.numeric(out$Low)
-  out$Close <- as.numeric(out$Close)
+  out$Close.. <- as.numeric(out$Close..)
   out$Volume <- as.numeric(gsub(",", "", as.character(out$Volume)))
   out$Market.Cap <- as.numeric(gsub(",", "", as.character(out$Market.Cap)))
 
