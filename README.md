@@ -5,8 +5,8 @@ Simple R based web scrapper to extract data from the popular cryptocurrency comp
 To install the package, run
 
 ```
-devtools::install_github("ckscheuch/rCoinMarketCap")
-library("rCoinMarketCap")
+devtools::install_github("christophscheuch/rCoinMarketCap")
+library(rCoinMarketCap)
 ```
 ## Usage
 
@@ -17,5 +17,5 @@ get_ticker()
 
 To get get historical data for a specific coin and date range, just use the coin ID from the ticker function
 ```
-get_historical_data(id = "bitcoin", from = "2017-01-01", to = "2018-01-01")
+get_historical_data(id = "bitcoin", from = "2017-01-01", to = "2019-11-01")
 ```
